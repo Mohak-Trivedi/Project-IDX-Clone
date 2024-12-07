@@ -1,7 +1,13 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { CreateProject } from "../pages/CreateProject";
 
 function App() {
-  return <>Hello</>;
+  return (
+    <Routes>
+      <Route path="/" element={<CreateProject />} />
+    </Routes>
+  );
 }
 
 export default App;
