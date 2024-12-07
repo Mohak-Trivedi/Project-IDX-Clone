@@ -1,4 +1,5 @@
 import { useCreateProject } from "../hooks/apis/mutations/useCreateProject";
+import { Button, Row, Col, Flex } from "antd";
 
 export const CreateProject = () => {
   const { createProjectMutation, isPending } = useCreateProject();
@@ -15,10 +16,14 @@ export const CreateProject = () => {
   }
 
   return (
-    <div>
-      {isPending && <p>Creating Project...</p>}
-      <h1>Create Project</h1>
-      <button onClick={handleCreateProject}>Create Project</button>
-    </div>
+    <Row>
+      <Col span={24}>
+        <Flex justify="center">
+          <Button type="primary" onClick={handleCreateProject}>
+            Create Playground
+          </Button>
+        </Flex>
+      </Col>
+    </Row>
   );
 };
