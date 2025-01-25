@@ -1,5 +1,5 @@
-import { Routes } from "react-router-dom";
-import { CreateProject } from "./pages/CreateProject.js";
+import { Routes, Route } from "react-router-dom";
+import { CreateProject } from "./pages/CreateProject.jsx";
 import { ProjectPlayground } from "./pages/ProjectPlayground.jsx";
 
 export const Router = () => {

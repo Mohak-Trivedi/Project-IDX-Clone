@@ -2,7 +2,7 @@ import { promisify } from "node:util";
 import child_process from "node:child_process";
 import fs from "fs/promises";
 import uuid4 from "uuid4";
-import { REACT_PROJECT_COMMAND } from "../../config/serverConfig.js";
+import { REACT_PROJECT_COMMAND } from "../config/serverConfig.js";
 
 const execPromisified = promisify(child_process.exec);
 

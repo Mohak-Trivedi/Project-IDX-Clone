@@ -7,7 +7,9 @@ export const useCreateProject = () => {
     onSuccess: (data) => {
       console.log("Project created successfully", data);
     },
-    onError: () => {},
+    onError: () => {
+      console.log("Error creating project");
+    },
   });
 
   return { createProjectMutation: mutateAsync, isPending, isSuccess, error };
